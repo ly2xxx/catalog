@@ -1,0 +1,45 @@
+stages:
+  - build
+  - deploy
+
+variables:
+  PIP_CACHE_DIR: "$CI_PROJECT_DIR/.cache/pip"
+
+cache:
+  paths:
+    - .cache/pip/
+
+# Build job that runs on all pushes and MRs
+build:
+  stage: build
+  image: python:3.11
+  before_script:
+    - python --version
+    - pip install --upgrade pip
+  script:
+    - pip install -r requirements.txt
+    - mkdocs build --verbose
+  artifacts:
+    paths:
+      - site/
+    expire_in: 1 hour
+  except:
+    - main
+
+# Pages deployment job - only runs on main branch
+pages:
+  stage: deploy
+  image: python:3.11
+  before_script:
+    - python --version
+    - pip install --upgrade pip
+  script:
+    - pip install -r requirements.txt
+    - mkdocs build --verbose
+    # Move built site to public directory (required by GitLab Pages)
+    - mv site public
+  artifacts:
+    paths:
+      - public
+  only:
+    - main

@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:gitlab-docs-d6a9bb.gitlab.io)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
