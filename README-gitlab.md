@@ -14,12 +14,23 @@ Edit your GitLab configuration file (`/etc/gitlab/gitlab.rb` or similar) and add
 ##! Docs: https://docs.gitlab.com/ee/administration/pages/
 ################################################################################
 
-##! Define to enable GitLab Pages
-pages_external_url "http://pages.host.docker.internal/"
+# Keep main GitLab on its domain
+external_url "http://host.docker.internal"
+
+# Set Pages to use subdomain but let NGINX handle routing
+pages_external_url "http://pages.host.docker.internal"
+
+# Enable GitLab Pages
 gitlab_pages['enable'] = true
 
-##! Configure to expose GitLab Pages on external IP address, serving the HTTP
-gitlab_pages['external_http'] = ['0.0.0.0:80']
+# Let GitLab Pages run on internal port only (avoid port 80 conflict)
+gitlab_pages['listen_proxy'] = '127.0.0.1:8090'
+
+# Disable direct external HTTP binding (let NGINX handle it)
+gitlab_pages['external_http'] = []
+
+# Ensure NGINX is enabled for Pages
+pages_nginx['enable'] = true
 ```
 
 ### 2. Reconfigure GitLab
@@ -97,16 +108,48 @@ pages:
 
 ### Default URL Format
 
-Your GitLab Pages site should be accessible at:
-- **Format**: `http://pages.your-gitlab-domain/username/repository-name/`
-- **For local GitLab**: `http://pages.host.docker.internal/root/lab-01-basic-pipeline/`
+GitLab Pages uses subdomain-based URLs by default:
+- **Format**: `http://username.pages.your-gitlab-domain/repository-name/`
+- **For local GitLab**: `http://root.pages.host.docker.internal/lab-01-basic-pipeline/`
 
 ### Finding the Exact URL
 
 1. Go to your GitLab project
-2. Navigate to **Settings → Pages**
+2. Navigate to **Deploy → Pages** (in left sidebar)
 3. Look for the deployment status and exact URL
 4. Check for any error messages or deployment failures
+
+### DNS Configuration for Subdomain Access
+
+Since GitLab Pages uses subdomain-based URLs (e.g., `http://root.pages.host.docker.internal/lab-01-basic-pipeline/`), you need to configure DNS resolution for the subdomain.
+
+#### Windows Hosts File Configuration
+
+Add the following line to `C:\Windows\System32\drivers\etc\hosts`:
+
+```
+127.0.0.1 root.pages.host.docker.internal
+```
+
+**Steps:**
+1. Open Notepad as Administrator
+2. Open `C:\Windows\System32\drivers\etc\hosts`
+3. Add the line above
+4. Save the file
+5. Your GitLab Pages site should now be accessible
+
+#### Linux/Mac Hosts File Configuration
+
+Add the following line to `/etc/hosts`:
+
+```
+127.0.0.1 root.pages.host.docker.internal
+```
+
+**Steps:**
+```bash
+sudo echo "127.0.0.1 root.pages.host.docker.internal" >> /etc/hosts
+```
 
 ## Troubleshooting Common Issues
 
@@ -114,14 +157,15 @@ Your GitLab Pages site should be accessible at:
 
 **Possible Causes:**
 - GitLab Pages not properly configured in gitlab.rb
-- DNS/networking issues with pages subdomain
+- DNS/networking issues with pages subdomain (most common)
 - Pages deployment still in progress
 - Incorrect URL format
 
 **Solutions:**
-- Verify GitLab Pages is enabled and running
-- Check Settings → Pages in your project for deployment status
-- Try alternative URL formats (with/without pages subdomain)
+- Verify GitLab Pages is enabled and running: `sudo gitlab-ctl status gitlab-pages`
+- Check Deploy → Pages in your project for deployment status
+- **Most Important**: Add subdomain to hosts file (see DNS Configuration section above)
+- Test with curl using Host header: `curl -v -H "Host: root.pages.host.docker.internal" http://127.0.0.1:8090/lab-01-basic-pipeline`
 - Wait a few minutes for deployment to complete
 
 ### 2. Git Revision Date Warnings
@@ -157,6 +201,19 @@ Add `GIT_DEPTH: 0` to your `.gitlab-ci.yml` variables section.
 - Ensure `mv site public` command runs successfully
 - Check artifacts section includes `public` directory
 - Verify MkDocs builds to `site/` directory
+
+### 5. Port Conflicts ("bind: address already in use")
+
+**Error Message:**
+```
+failed to listen on addr 0.0.0.0:80: listen tcp 0.0.0.0:80: bind: address already in use
+```
+
+**Solution:**
+- Use the internal proxy configuration shown above
+- Set `gitlab_pages['listen_proxy'] = '127.0.0.1:8090'`
+- Set `gitlab_pages['external_http'] = []`
+- Let NGINX handle external requests
 
 ## Pipeline Workflow
 
@@ -215,52 +272,23 @@ sudo gitlab-ctl status gitlab-pages
 
 # View GitLab Pages logs
 sudo gitlab-ctl tail gitlab-pages
+
+# Test GitLab Pages internal service
+curl -v -H "Host: root.pages.host.docker.internal" http://127.0.0.1:8090/lab-01-basic-pipeline
 ```
 
-  In your GitLab project, also check:
-  - Settings → CI/CD → Variables - ensure no conflicting variables
-  - Settings → General → Visibility - ensure the project/pages are set to public if needed
+## Working Configuration Summary
 
+This setup uses GitLab's built-in NGINX to proxy Pages requests, avoiding port conflicts while keeping both services functional:
 
-Problem Analysis:                                                                                                                                                                                                                                                                                                                                                             │ │
-│ │                                                                                                                                                                                                                                                                                                                                                                               │ │
-│ │ - GitLab Pages and main GitLab web interface are competing for the same domain/port                                                                                                                                                                                                                                                                                           │ │
-│ │ - Setting pages_external_url to include a port breaks the main GitLab website                                                                                                                                                                                                                                                                                                 │ │
-│ │ - Current configuration "http://pages.host.docker.internal" works for main site but GitLab Pages still can't bind to port 80                                                                                                                                                                                                                                                  │ │
-│ │                                                                                                                                                                                                                                                                                                                                                                               │ │
-│ │ Solution: Configure GitLab to Use NGINX Proxy for Pages                                                                                                                                                                                                                                                                                                                       │ │
-│ │                                                                                                                                                                                                                                                                                                                                                                               │ │
-│ │ Step 1: Update gitlab.rb Configuration                                                                                                                                                                                                                                                                                                                                        │ │
-│ │ # Keep main GitLab on its domain                                                                                                                                                                                                                                                                                                                                              │ │
-│ │ external_url "http://host.docker.internal"                                                                                                                                                                                                                                                                                                                                    │ │
-│ │                                                                                                                                                                                                                                                                                                                                                                               │ │
-│ │ # Set Pages to use the same domain but let NGINX handle routing                                                                                                                                                                                                                                                                                                               │ │
-│ │ pages_external_url "http://pages.host.docker.internal"                                                                                                                                                                                                                                                                                                                        │ │
-│ │                                                                                                                                                                                                                                                                                                                                                                               │ │
-│ │ # Enable GitLab Pages                                                                                                                                                                                                                                                                                                                                                         │ │
-│ │ gitlab_pages['enable'] = true                                                                                                                                                                                                                                                                                                                                                 │ │
-│ │                                                                                                                                                                                                                                                                                                                                                                               │ │
-│ │ # Let GitLab Pages run on internal port only (avoid port 80 conflict)                                                                                                                                                                                                                                                                                                         │ │
-│ │ gitlab_pages['listen_proxy'] = '127.0.0.1:8090'                                                                                                                                                                                                                                                                                                                               │ │
-│ │                                                                                                                                                                                                                                                                                                                                                                               │ │
-│ │ # Disable direct external HTTP binding (let NGINX handle it)                                                                                                                                                                                                                                                                                                                  │ │
-│ │ gitlab_pages['external_http'] = []                                                                                                                                                                                                                                                                                                                                            │ │
-│ │                                                                                                                                                                                                                                                                                                                                                                               │ │
-│ │ # Ensure NGINX is enabled for Pages                                                                                                                                                                                                                                                                                                                                           │ │
-│ │ pages_nginx['enable'] = true                                                                                                                                                                                                                                                                                                                                                  │ │
-│ │                                                                                                                                                                                                                                                                                                                                                                               │ │
-│ │ Step 2: Reconfigure GitLab                                                                                                                                                                                                                                                                                                                                                    │ │
-│ │ - Run sudo gitlab-ctl reconfigure to apply changes                                                                                                                                                                                                                                                                                                                            │ │
-│ │ - Verify both GitLab main site and Pages are accessible                                                                                                                                                                                                                                                                                                                       │ │
-│ │                                                                                                                                                                                                                                                                                                                                                                               │ │
-│ │ Step 3: Test Access                                                                                                                                                                                                                                                                                                                                                           │ │
-│ │ - Main GitLab: http://host.docker.internal                                                                                                                                                                                                                                                                                                                                    │ │
-│ │ - GitLab Pages: http://pages.host.docker.internal/root/lab-01-basic-pipeline/                                                                                                                                                                                                                                                                                                 │ │
-│ │                                                                                                                                                                                                                                                                                                                                                                               │ │
-│ │ Step 4: Update README-gitlab.md                                                                                                                                                                                                                                                                                                                                               │ │
-│ │ - Document the final working configuration                                                                                                                                                                                                                                                                                                                                    │ │
-│ │ - Include troubleshooting steps for this specific setup                                                                                                                                                                                                                                                                                                                       │ │
-│ │ - Add security notes about same-domain configuration                                                                                                                                                                                                                                                                                                                          │ │
-│ │                                                                                                                                                                                                                                                                                                                                                                               │ │
-│ │ This approach uses GitLab's built-in NGINX to proxy Pages requests, avoiding port conflicts while keeping both services functional.  
-![1757856164884](image/README-gitlab/1757856164884.png)
+1. **Main GitLab**: `http://host.docker.internal`
+2. **GitLab Pages**: `http://root.pages.host.docker.internal/lab-01-basic-pipeline/`
+3. **Internal Pages Service**: Runs on `127.0.0.1:8090`
+4. **DNS Resolution**: Requires hosts file entry for subdomain access
+
+## Security Notes
+
+- This configuration uses the same domain for both GitLab and Pages
+- For production environments, consider using separate domains for security
+- Subdomain-based URLs provide better isolation between user projects
+- Ensure proper access controls are in place for sensitive projects
