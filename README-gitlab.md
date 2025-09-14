@@ -216,3 +216,7 @@ sudo gitlab-ctl status gitlab-pages
 # View GitLab Pages logs
 sudo gitlab-ctl tail gitlab-pages
 ```
+
+  In your GitLab project, also check:
+  - Settings → CI/CD → Variables - ensure no conflicting variables
+  - Settings → General → Visibility - ensure the project/pages are set to public if needed
