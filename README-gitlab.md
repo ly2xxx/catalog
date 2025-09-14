@@ -292,3 +292,5 @@ This setup uses GitLab's built-in NGINX to proxy Pages requests, avoiding port c
 - For production environments, consider using separate domains for security
 - Subdomain-based URLs provide better isolation between user projects
 - Ensure proper access controls are in place for sensitive projects
+
+![1757881290028](image/README-gitlab/1757881290028.png)
