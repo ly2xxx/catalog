@@ -40,6 +40,7 @@ nav:
     - Development Tools: projects/dev-tools.md
     - Web Applications: projects/web-apps.md
     - Learning & Tutorials: projects/learning.md
+    - Mobile Applications: projects/mobile-apps.md
     - Proof of Concepts: projects/poc.md
   - About: about.md
   - Contributing: contributing.md

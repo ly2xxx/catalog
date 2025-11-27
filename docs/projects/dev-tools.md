@@ -20,6 +20,27 @@ A comprehensive toolkit that leverages artificial intelligence to accelerate sof
     - Intelligent debugging assistance
     - Code quality analysis and optimization
 
+---
+
+### [aidev](https://github.com/ly2xxx/aidev)
+**GenAI Development Team** → See [AI & Machine Learning](ai-ml.md#aidev)
+
+AI-powered software development team leveraging generative AI for automated coding, testing, and documentation.
+
+---
+
+### [aisoft](https://github.com/ly2xxx/aisoft)
+**AI Software Development Platform** → See [AI & Machine Learning](ai-ml.md#aisoft)
+
+Intelligent platform for AI-assisted software development across the entire lifecycle.
+
+---
+
+### [browser-use_poc](https://github.com/ly2xxx/browser-use_poc)
+**AI Browser Automation** → See [AI & Machine Learning](ai-ml.md#browser-use_poc)
+
+Autonomous browser automation using AI for intelligent web interactions and testing.
+
 ## 🔄 CI/CD & DevOps
 
 ### [gitlab-runner-poc](https://github.com/ly2xxx/gitlab-runner-poc)
@@ -42,6 +63,18 @@ Experimental project for exploring GitLab API integration and automation capabil
 - **Tech Stack:** Python, GitLab API, REST
 - **Features:** API automation, webhook handling, project management
 - **Status:** Experimental
+
+---
+
+### [evergreen](https://github.com/ly2xxx/evergreen)
+**Evergreen GitLab Projects**
+
+Automation tool for maintaining and updating GitLab projects, ensuring dependencies and configurations stay current.
+
+- **Tech Stack:** Python, GitLab API, Automation
+- **Features:** Dependency updates, configuration management, automated maintenance
+- **Status:** Active
+- **Purpose:** Project maintenance automation
 
 ## 🔧 Productivity Tools
 
@@ -66,6 +99,30 @@ Proof-of-concept implementation exploring the Model Context Protocol for AI mode
 - **Features:** Protocol experimentation, model communication, context management
 - **Status:** Research
 
+---
+
+### [mailclerk](https://github.com/ly2xxx/mailclerk)
+**Intelligent Email Sorting**
+
+Automated email management tool that sorts and organizes emails based on customizable rules and patterns.
+
+- **Tech Stack:** Python, Email APIs, Rule Engine
+- **Features:** Rule-based sorting, pattern matching, folder organization, filtering
+- **Status:** Utility
+- **Use Cases:** Inbox management, automated filing, priority sorting
+
+---
+
+### [common](https://github.com/ly2xxx/common)
+**Common Python Library**
+
+Reusable Python library containing shared utilities, helpers, and common functions used across multiple projects.
+
+- **Tech Stack:** Python, Utilities
+- **Features:** Helper functions, common patterns, utility classes
+- **Status:** Library
+- **Purpose:** Code reuse and standardization
+
 ## 🏢 Enterprise Tools
 
 ### [hrtoolkit](https://github.com/ly2xxx/hrtoolkit)
@@ -80,9 +137,49 @@ Comprehensive toolkit for performance management and succession planning in ente
 
 !!! info "Enterprise Features"
     - Employee performance tracking and analytics
-    - Succession planning and talent pipeline management  
+    - Succession planning and talent pipeline management
     - Automated reporting and insights
     - Integration with existing HR systems
+
+## 🔐 Security Tools
+
+### [gitleaks-poc](https://github.com/ly2xxx/gitleaks-poc)
+**Security Scanning Proof of Concept**
+
+Exploration of Gitleaks for detecting and preventing hardcoded secrets, passwords, and API keys in Git repositories.
+
+- **Tech Stack:** HTML, Gitleaks, Security Scanning
+- **Features:** Secret detection, pre-commit hooks, repository scanning
+- **Status:** Proof of Concept
+- **License:** MIT
+- **Purpose:** Code security and secret management
+
+!!! warning "Security Best Practices"
+    - **Secret Detection** - Scan commits for exposed credentials
+    - **Pre-commit Hooks** - Prevent secrets from being committed
+    - **Repository Audits** - Historical scanning for exposed secrets
+    - **Remediation** - Guidance for secret rotation and cleanup
+
+---
+
+### [grabit](https://github.com/ly2xxx/grabit)
+**Web Scraping Tool** → See [Web Applications](web-apps.md#grabit)
+
+Streamlit-based web scraping tool with Playwright integration for automated data extraction.
+
+---
+
+### [gitlab_lab](https://github.com/ly2xxx/gitlab_lab)
+**GitLab CI/CD Tutorial** → See [Learning & Tutorials](learning.md#gitlab_lab)
+
+Comprehensive hands-on laboratory for mastering GitLab CI/CD pipelines and DevOps practices.
+
+---
+
+### [iac_poc](https://github.com/ly2xxx/iac_poc)
+**Infrastructure as Code Tutorial** → See [Learning & Tutorials](learning.md#iac_poc)
+
+Learning resource for Infrastructure as Code using Terraform, Ansible, and modern IaC tools.
 
 ## 📊 Development Analytics
 

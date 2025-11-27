@@ -22,6 +22,92 @@ A comprehensive, interactive learning environment for mastering the Go programmi
     - **Testing** - Unit testing, benchmarking, and best practices
     - **Real Projects** - Building complete applications from scratch
 
+---
+
+### [py_playground](https://github.com/ly2xxx/py_playground)
+**Python Experimentation Playground**
+
+Interactive Python learning environment with Jupyter notebooks for exploring Python concepts, libraries, and data science techniques.
+
+- **Tech Stack:** Jupyter Notebook, Python, Data Science Libraries
+- **Features:** Interactive notebooks, code examples, visualization demos
+- **Status:** Active Learning Resource
+- **Focus:** Python programming and data analysis
+
+!!! note "Playground Topics"
+    - **Core Python** - Language fundamentals and advanced features
+    - **Data Science** - NumPy, Pandas, Matplotlib exploration
+    - **Web Development** - Flask, FastAPI examples
+    - **Automation** - Scripting and task automation tutorials
+
+---
+
+## 🔄 CI/CD Tutorials
+
+### [gitlab_lab](https://github.com/ly2xxx/gitlab_lab)
+**GitLab CI/CD Hands-on Laboratory**
+
+Comprehensive tutorial and learning environment for mastering GitLab CI/CD pipelines, automation, and DevOps practices.
+
+- **Tech Stack:** Python, GitLab CI/CD, YAML, Docker
+- **Features:** Pipeline examples, hands-on exercises, best practices
+- **Status:** Active Tutorial
+- **Focus:** Continuous integration and deployment workflows
+
+!!! tip "Tutorial Modules"
+    - **Pipeline Basics** - Understanding .gitlab-ci.yml syntax and structure
+    - **Stages & Jobs** - Building multi-stage deployment workflows
+    - **Docker Integration** - Container-based CI/CD pipelines
+    - **Testing Automation** - Automated test execution and reporting
+    - **Deployment Strategies** - Blue-green, canary, and rolling deployments
+
+*Also see: [Development Tools](dev-tools.md#gitlab_lab) for related GitLab automation*
+
+---
+
+## ☁️ Infrastructure & Cloud Labs
+
+### [okd](https://github.com/ly2xxx/okd)
+**OKD Homelab Setup Guide**
+
+Comprehensive guide and automation scripts for setting up OKD (OpenShift Kubernetes Distribution) in a homelab environment.
+
+- **Tech Stack:** PowerShell, Kubernetes, OKD, Infrastructure
+- **Features:** Installation guides, configuration scripts, troubleshooting
+- **Status:** Documentation
+- **Focus:** Self-hosted Kubernetes cluster setup
+
+!!! info "Homelab Setup"
+    - **OKD Installation** - Step-by-step deployment guide
+    - **Cluster Configuration** - Network, storage, and resource setup
+    - **Application Deployment** - Sample application deployment workflows
+    - **Monitoring & Maintenance** - Cluster health and updates
+
+---
+
+### [iac_poc](https://github.com/ly2xxx/iac_poc)
+**Infrastructure as Code Tutorial**
+
+Proof-of-concept and learning resource for Infrastructure as Code practices using modern IaC tools and methodologies.
+
+- **Tech Stack:** HTML, Terraform, Ansible, IaC Tools
+- **Features:** Tutorial examples, best practices, hands-on labs
+- **Status:** Tutorial
+- **License:** Other
+- **Focus:** Automated infrastructure provisioning
+
+!!! abstract "IaC Concepts"
+    - **Declarative Configuration** - Define desired infrastructure state
+    - **Version Control** - Track infrastructure changes in Git
+    - **Automation** - Automated provisioning and updates
+    - **Consistency** - Reproducible infrastructure deployments
+
+*Also see: [Development Tools](dev-tools.md#iac_poc) for automation tooling*
+
+---
+
+## 📖 Comprehensive Tutorials
+
 #### Course Structure
 
 === "Module 1: Basics"

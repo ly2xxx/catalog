@@ -86,6 +86,45 @@ Web-based development environment enhancement tool that provides AI-powered codi
 - **Status:** Active Development
 - **Stars:** ⭐ 1
 
+---
+
+### [grabit](https://github.com/ly2xxx/grabit)
+**Streamlit Web Scraping Tool**
+
+Interactive web scraping application built with Streamlit and Playwright for easy data extraction from websites.
+
+- **Tech Stack:** Python, Streamlit, Playwright, Web Scraping
+- **Features:** Point-and-click scraping, JavaScript rendering, data export, scheduling
+- **Status:** Active Development
+- **Use Cases:** Data collection, web monitoring, competitive analysis
+
+!!! tip "Scraping Features"
+    - **Visual Interface** - User-friendly Streamlit dashboard
+    - **Dynamic Content** - Playwright handles JavaScript-heavy sites
+    - **Export Options** - CSV, JSON, Excel formats
+    - **Automation** - Scheduled scraping tasks
+
+*Also see: [Development Tools](dev-tools.md#grabit) for automation perspectives*
+
+## 🔌 Network & Connectivity
+
+### [netshare](https://github.com/ly2xxx/netshare)
+**Network File Sharing Platform**
+
+Web-based file sharing solution enabling seamless file transfer from Windows to Android/Quest devices over local network.
+
+- **Tech Stack:** HTML, JavaScript, Network Protocols
+- **Features:** Cross-platform sharing, wireless transfer, no-cloud privacy
+- **Status:** Stable
+- **License:** GPL v3.0
+- **Platforms:** Windows, Android, Oculus Quest
+
+!!! info "Key Features"
+    - **Local Network** - No internet required, fully offline capable
+    - **Cross-Platform** - Windows to Android/Quest compatibility
+    - **Privacy First** - No cloud storage, direct device-to-device transfer
+    - **Easy Setup** - Simple configuration and pairing process
+
 ## 📊 Analytics & Visualization
 
 ### Web Application Metrics

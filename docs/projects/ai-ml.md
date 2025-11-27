@@ -146,6 +146,38 @@ Tools and utilities for working with LangFlow visual programming for AI applicat
 
 ---
 
+## 🤖 AI Automation
+
+### [browser-use_poc](https://github.com/ly2xxx/browser-use_poc)
+**AI-Driven Browser Automation**
+
+Proof-of-concept exploring autonomous browser interaction using AI agents for web automation tasks.
+
+- **Tech Stack:** Python, Browser Automation, AI Models
+- **Features:** Autonomous web navigation, form filling, data extraction
+- **Status:** Proof of Concept
+- **Innovation:** AI-powered decision making for dynamic web interactions
+
+!!! abstract "Automation Capabilities"
+    - **Intelligent Navigation** - AI understands page structure and context
+    - **Adaptive Interactions** - Handles dynamic content and JavaScript-heavy sites
+    - **Task Completion** - Goal-oriented automation with error recovery
+    - **Multi-step Workflows** - Complex task chaining and orchestration
+
+---
+
+### [dspy_poc](https://github.com/ly2xxx/dspy_poc)
+**DSPy Framework Exploration**
+
+Experimentation with DSPy (Declarative Self-improving Python) for building more reliable and optimizable LLM applications.
+
+- **Tech Stack:** Jupyter Notebook, Python, DSPy, LLMs
+- **Features:** Prompt optimization, programmatic LLM pipelines, self-improvement
+- **Status:** Research Phase
+- **Focus:** Systematic prompt engineering and optimization
+
+---
+
 ### [langflow-whl](https://github.com/ly2xxx/langflow-whl)
 **LangFlow Distribution**
 
@@ -196,6 +228,42 @@ Current focus areas include:
 - **Advanced RAG** - Improved retrieval and generation techniques  
 - **Enterprise AI** - Business process automation
 - **AI Safety** - Responsible AI development practices
+
+---
+
+## 🏗️ AI-Powered Development
+
+### [aidev](https://github.com/ly2xxx/aidev)
+**GenAI Software Development Team**
+
+A revolutionary approach to software development using generative AI to create an autonomous development team capable of coding, testing, and documentation.
+
+- **Tech Stack:** Python, GenAI Models, Development Automation
+- **Features:** Automated coding, test generation, documentation, code review
+- **Status:** Active Development
+- **Innovation:** Multi-agent development workflow
+
+!!! tip "Development Automation"
+    - **Code Generation** - AI writes production-ready code from specifications
+    - **Automated Testing** - Generate comprehensive test suites
+    - **Documentation** - Auto-generate API docs and user guides
+    - **Code Review** - AI-powered code quality analysis
+
+*Also see: [Development Tools](dev-tools.md#aidev) for integration perspectives*
+
+---
+
+### [aisoft](https://github.com/ly2xxx/aisoft)
+**AI-Powered Software Development**
+
+Intelligent software development platform leveraging AI to accelerate the entire software development lifecycle.
+
+- **Tech Stack:** Python, AI Models, DevOps Integration
+- **Features:** Requirements analysis, architecture design, implementation, deployment
+- **Status:** Beta
+- **Scope:** End-to-end AI-assisted development
+
+*Also see: [Development Tools](dev-tools.md#aisoft) for tooling integration*
 
 ---
 
