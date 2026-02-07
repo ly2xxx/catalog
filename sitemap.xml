@@ -2,38 +2,66 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://ly2xxx.github.io/catalog/</loc>
-         <lastmod>2025-11-27</lastmod>
+         <lastmod>2026-02-07</lastmod>
     </url>
     <url>
          <loc>https://ly2xxx.github.io/catalog/about/</loc>
-         <lastmod>2025-11-27</lastmod>
+         <lastmod>2026-02-07</lastmod>
     </url>
     <url>
          <loc>https://ly2xxx.github.io/catalog/contributing/</loc>
-         <lastmod>2025-11-27</lastmod>
+         <lastmod>2026-02-07</lastmod>
     </url>
     <url>
          <loc>https://ly2xxx.github.io/catalog/projects/ai-ml/</loc>
-         <lastmod>2025-11-27</lastmod>
+         <lastmod>2026-02-07</lastmod>
+    </url>
+    <url>
+         <loc>https://ly2xxx.github.io/catalog/projects/business-tools/</loc>
+         <lastmod>2026-02-07</lastmod>
     </url>
     <url>
          <loc>https://ly2xxx.github.io/catalog/projects/dev-tools/</loc>
-         <lastmod>2025-11-27</lastmod>
+         <lastmod>2026-02-07</lastmod>
+    </url>
+    <url>
+         <loc>https://ly2xxx.github.io/catalog/projects/devops/</loc>
+         <lastmod>2026-02-07</lastmod>
     </url>
     <url>
          <loc>https://ly2xxx.github.io/catalog/projects/learning/</loc>
-         <lastmod>2025-11-27</lastmod>
+         <lastmod>2026-02-07</lastmod>
+    </url>
+    <url>
+         <loc>https://ly2xxx.github.io/catalog/projects/legacy/</loc>
+         <lastmod>2026-02-07</lastmod>
+    </url>
+    <url>
+         <loc>https://ly2xxx.github.io/catalog/projects/libraries/</loc>
+         <lastmod>2026-02-07</lastmod>
     </url>
     <url>
          <loc>https://ly2xxx.github.io/catalog/projects/mobile-apps/</loc>
-         <lastmod>2025-11-27</lastmod>
+         <lastmod>2026-02-07</lastmod>
     </url>
     <url>
          <loc>https://ly2xxx.github.io/catalog/projects/poc/</loc>
-         <lastmod>2025-11-27</lastmod>
+         <lastmod>2026-02-07</lastmod>
+    </url>
+    <url>
+         <loc>https://ly2xxx.github.io/catalog/projects/special/</loc>
+         <lastmod>2026-02-07</lastmod>
+    </url>
+    <url>
+         <loc>https://ly2xxx.github.io/catalog/projects/utilities/</loc>
+         <lastmod>2026-02-07</lastmod>
     </url>
     <url>
          <loc>https://ly2xxx.github.io/catalog/projects/web-apps/</loc>
-         <lastmod>2025-11-27</lastmod>
+         <lastmod>2026-02-07</lastmod>
+    </url>
+    <url>
+         <loc>https://ly2xxx.github.io/catalog/projects/web-automation/</loc>
+         <lastmod>2026-02-07</lastmod>
     </url>
 </urlset>
