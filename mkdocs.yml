@@ -36,12 +36,15 @@ theme:
 nav:
   - Home: index.md
   - Projects:
-    - AI & Machine Learning: projects/ai-ml.md
-    - Development Tools: projects/dev-tools.md
-    - Web Applications: projects/web-apps.md
-    - Learning & Tutorials: projects/learning.md
-    - Mobile Applications: projects/mobile-apps.md
-    - Proof of Concepts: projects/poc.md
+    - 🤖 AI & Machine Learning: projects/ai-ml.md
+    - 🌐 Web Automation: projects/web-automation.md
+    - 🔧 DevOps & Infrastructure: projects/devops.md
+    - 📚 Learning & Tutorials: projects/learning.md
+    - 💼 Business Tools: projects/business-tools.md
+    - 🎮 Utilities & Media: projects/utilities.md
+    - 📦 Libraries: projects/libraries.md
+    - ⭐ Special Projects: projects/special.md
+    - 🧪 Legacy: projects/legacy.md
   - About: about.md
   - Contributing: contributing.md
 

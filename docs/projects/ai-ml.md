@@ -1,270 +1,264 @@
-# 🤖 AI & Machine Learning
+# 🤖 AI & Machine Learning Projects
 
-This collection showcases my work in artificial intelligence and machine learning, spanning from experimental prototypes to production-ready applications.
+Comprehensive collection of AI/ML projects including agents, RAG systems, LangChain/LangGraph workflows, and LLM applications.
 
-## 🧠 AI Agents & Frameworks
-
-### [agents](https://github.com/ly2xxx/agents)
-**LangGraph-based Intelligent Agents**
-
-A comprehensive proof-of-concept implementation using LangGraph for building sophisticated AI agents capable of complex reasoning and task execution.
-
-- **Tech Stack:** Python, LangGraph, LangChain
-- **Features:** Multi-agent coordination, tool usage, state management
-- **Status:** Active Development
-- **Stars:** ⭐ 4 | **Forks:** 🍴 1
+**Total Projects:** 18 | **Stars:** 7
 
 ---
 
-### [langraph](https://github.com/ly2xxx/langraph)
-**LangGraph Experiments**
-
-Hands-on experimentation with LangGraph framework for building stateful, multi-actor applications with large language models.
-
-- **Tech Stack:** Jupyter Notebook, Python, LangGraph
-- **Features:** Graph-based agent workflows, state persistence
-- **Status:** Experimental
-- **Stars:** ⭐ 1
-
----
-
-### [agent_code_generator](https://github.com/ly2xxx/agent_code_generator)
-**AI-Powered Code Generation**
-
-Generate code from file context and natural language queries using advanced AI models.
-
-- **Tech Stack:** Python, OpenAI API
-- **Features:** Context-aware generation, file analysis
-- **Status:** Stable
-- **License:** MIT
-
-## 💬 Conversational AI & RAG Systems
-
-### [rag_chat_opensource_llm](https://github.com/ly2xxx/rag_chat_opensource_llm)
-**Open Source RAG Chatbot**
-
-A production-ready retrieval-augmented generation chatbot using open-source large language models.
-
-- **Tech Stack:** Python, Streamlit, Vector Databases
-- **Features:** Document ingestion, semantic search, conversational memory
-- **Status:** Active
-- **Stars:** ⭐ 2
-
----
-
-### [ai-pdf-chat](https://github.com/ly2xxx/ai-pdf-chat)
-**AI PDF Interaction System**
-
-Interactive chat interface for querying and analyzing PDF documents using AI.
-
-- **Tech Stack:** Python, PDF processing, NLP
-- **Features:** PDF parsing, intelligent Q&A, document summarization
-- **Status:** Early Development
-
----
-
-### [rag_chat_poc](https://github.com/ly2xxx/rag_chat_poc) 🔒
-**RAG Research & Development**
-
-Advanced experimentation with retrieval-augmented generation techniques based on custom document collections.
-
-- **Tech Stack:** Jupyter Notebook, Python, Vector Stores
-- **Features:** Custom embeddings, advanced retrieval strategies
-- **Status:** Research Phase
-- **Visibility:** Private
-
-## 🖼️ Computer Vision & Media Processing
-
-### [picture-search-poc](https://github.com/ly2xxx/picture-search-poc)
-**Intelligent Image Search**
-
-Proof-of-concept for semantic image search and analysis using computer vision techniques.
-
-- **Tech Stack:** Python, Computer Vision APIs
-- **Features:** Image embeddings, visual similarity search
-- **Status:** Prototype
-- **Stars:** ⭐ 1
-
-## 🏢 Enterprise AI Solutions
-
-### [focused](https://github.com/ly2xxx/focused) 🔒
-**GenAI Focus Group Application**
-
-Enterprise-focused generative AI application for organizational use cases and focus group analysis.
-
-- **Tech Stack:** Jupyter Notebook, Python
-- **Features:** Group analytics, AI-powered insights
-- **Status:** Development
-- **Visibility:** Private
-
----
-
-### [digi-me](https://github.com/ly2xxx/digi-me)
-**Digital Clone Framework**
-
-A comprehensive framework for creating digital representations of individuals for online work and life scenarios.
-
-- **Tech Stack:** Python, AI Models
-- **Features:** Personality modeling, behavioral simulation
-- **Status:** Beta
-- **License:** MIT
-
-## ☁️ Cloud AI Services
-
-### [bedrock_poc](https://github.com/ly2xxx/bedrock_poc)
-**AWS Bedrock Integration**
-
-Exploration of AWS Bedrock managed AI services for scalable AI application development.
-
-- **Tech Stack:** Python, AWS Bedrock, boto3
-- **Features:** Managed model access, cloud-native AI
-- **Status:** Proof of Concept
-
-## 🔧 AI Development Tools
-
-### [langflow-110](https://github.com/ly2xxx/langflow-110)
-**LangFlow Source Adaptation**
-
-Customized version of LangFlow 1.1.0 source code adapted for debugging and development purposes.
-
-- **Tech Stack:** Python, LangFlow
-- **Features:** Enhanced debugging, custom modifications
-- **Status:** Maintenance
-- **License:** MIT
-- **Issues:** 🐛 4 open
-
----
-
-### [langflow](https://github.com/ly2xxx/langflow)
-**LangFlow Toolkit**
-
-Tools and utilities for working with LangFlow visual programming for AI applications.
-
-- **Tech Stack:** HTML, JavaScript
-- **Features:** Visual AI workflows, drag-and-drop interface
-- **Status:** Utility
-
----
-
-## 🤖 AI Automation
-
-### [browser-use_poc](https://github.com/ly2xxx/browser-use_poc)
-**AI-Driven Browser Automation**
-
-Proof-of-concept exploring autonomous browser interaction using AI agents for web automation tasks.
-
-- **Tech Stack:** Python, Browser Automation, AI Models
-- **Features:** Autonomous web navigation, form filling, data extraction
-- **Status:** Proof of Concept
-- **Innovation:** AI-powered decision making for dynamic web interactions
-
-!!! abstract "Automation Capabilities"
-    - **Intelligent Navigation** - AI understands page structure and context
-    - **Adaptive Interactions** - Handles dynamic content and JavaScript-heavy sites
-    - **Task Completion** - Goal-oriented automation with error recovery
-    - **Multi-step Workflows** - Complex task chaining and orchestration
-
----
-
-### [dspy_poc](https://github.com/ly2xxx/dspy_poc)
-**DSPy Framework Exploration**
-
-Experimentation with DSPy (Declarative Self-improving Python) for building more reliable and optimizable LLM applications.
-
-- **Tech Stack:** Jupyter Notebook, Python, DSPy, LLMs
-- **Features:** Prompt optimization, programmatic LLM pipelines, self-improvement
-- **Status:** Research Phase
-- **Focus:** Systematic prompt engineering and optimization
-
----
-
-### [langflow-whl](https://github.com/ly2xxx/langflow-whl)
-**LangFlow Distribution**
-
-Custom wheel distribution and packaging for LangFlow components.
-
-- **Tech Stack:** Python, Packaging
-- **Features:** Custom distributions, enhanced packaging
-- **Status:** Utility
-
-## 📊 Key Technologies
-
-=== "Frameworks"
-    
-    - **LangGraph** - State-based agent orchestration
-    - **LangChain** - LLM application development
-    - **Streamlit** - Rapid prototyping and demos
-    - **FastAPI** - High-performance APIs
-
-=== "AI Models"
-    
-    - **OpenAI GPT Series** - Text generation and reasoning  
-    - **Anthropic Claude** - Advanced conversational AI
-    - **Open Source LLMs** - Llama, Mistral, and others
-    - **Embedding Models** - Semantic search and RAG
-
-=== "Infrastructure"
-    
-    - **Vector Databases** - Pinecone, Weaviate, Chroma
-    - **AWS Bedrock** - Managed AI services
-    - **Docker** - Containerized deployments
-    - **GitHub Actions** - CI/CD automation
-
-## 🚀 Getting Started
-
-Most projects include:
-
-- **README with setup instructions**
-- **Requirements.txt or poetry configuration**  
-- **Docker support** for easy deployment
-- **Example notebooks** for exploration
-- **API documentation** where applicable
-
-## 🔬 Research Areas
-
-Current focus areas include:
-
-- **Multi-Agent Systems** - Coordinated AI agent behavior
-- **Advanced RAG** - Improved retrieval and generation techniques  
-- **Enterprise AI** - Business process automation
-- **AI Safety** - Responsible AI development practices
-
----
-
-## 🏗️ AI-Powered Development
+## 🌟 Production & Featured Projects
 
 ### [aidev](https://github.com/ly2xxx/aidev)
-**GenAI Software Development Team**
+**GenAI-powered software development team**
 
-A revolutionary approach to software development using generative AI to create an autonomous development team capable of coding, testing, and documentation.
+Complete AI development crew with MCP (Model Context Protocol) integration. Features Claude Code, Gemini CLI, and Docker orchestration for collaborative AI software development.
 
-- **Tech Stack:** Python, GenAI Models, Development Automation
-- **Features:** Automated coding, test generation, documentation, code review
-- **Status:** Active Development
-- **Innovation:** Multi-agent development workflow
+- **Tech Stack:** Python, MCP, Claude API, Gemini API, Docker
+- **Features:** Multi-agent collaboration, code generation, automated testing
+- **Status:** 🟢 Active (Updated: 2025-07-25)
+- **Highlights:** YouTube demo videos, production-ready architecture
+- **Related:** YouTube channel with tutorials
 
-!!! tip "Development Automation"
-    - **Code Generation** - AI writes production-ready code from specifications
-    - **Automated Testing** - Generate comprehensive test suites
-    - **Documentation** - Auto-generate API docs and user guides
-    - **Code Review** - AI-powered code quality analysis
+---
 
-*Also see: [Development Tools](dev-tools.md#aidev) for integration perspectives*
+### [agents](https://github.com/ly2xxx/agents) ⭐ 4
+**LangGraph-based intelligent agents**
+
+Proof-of-concept demonstrating multi-agent orchestration using LangGraph. Shows advanced agent patterns for reasoning, planning, and execution.
+
+- **Tech Stack:** Python, LangGraph, LangChain
+- **Features:** Multi-agent coordination, state management, complex workflows
+- **Status:** 🟡 Stable (Updated: 2024-11-16)
+- **Stars:** ⭐⭐⭐⭐ (Most popular project)
+
+---
+
+### [rag_chat_opensource_llm](https://github.com/ly2xxx/rag_chat_opensource_llm) ⭐ 2
+**RAG chatbot using open-source LLMs**
+
+Production-quality retrieval-augmented generation chatbot built with open-source language models. Demonstrates best practices for RAG architecture.
+
+- **Tech Stack:** Python, LangChain, Open-source LLMs, Vector DBs
+- **Features:** Document retrieval, context injection, conversation memory
+- **Status:** 🟢 Active (Updated: 2025-10-03)
+- **Stars:** ⭐⭐
+- **Use Cases:** Document Q&A, knowledge bases, enterprise chatbots
+
+---
+
+### [SmartDevelop](https://github.com/ly2xxx/SmartDevelop) ⭐ 1
+**AI-powered software development**
+
+PowerShell-based AI development assistant for automating coding workflows. Integrates with various AI APIs for code generation and review.
+
+- **Tech Stack:** PowerShell, AI APIs
+- **Features:** Code generation, automated reviews, workflow automation
+- **Status:** 🟡 Maintenance (Updated: 2025-06-30)
+
+---
+
+## 💬 RAG & Chat Applications
+
+### [ai-pdf-chat](https://github.com/ly2xxx/ai-pdf-chat)
+**Interactive PDF Q&A chatbot**
+
+Chat with your PDF documents using AI. Upload PDFs and ask questions about their content with intelligent context retrieval.
+
+- **Tech Stack:** Python, LangChain, PDF processing
+- **Features:** PDF parsing, semantic search, conversational interface
+- **Status:** 🟢 Active (Updated: 2025-07-05)
+
+---
+
+### [local-rag-ollama](https://github.com/ly2xxx/local-rag-ollama)
+**Local RAG with Ollama**
+
+Experimented with Retrieval Augmented Generation using locally hosted LLMs via Ollama. Privacy-first RAG solution running entirely on your machine.
+
+- **Tech Stack:** Python, Ollama, LangChain, FAISS
+- **Features:** 100% local execution, no API costs, privacy-preserving
+- **Status:** 🟡 Stable (Updated: 2024-01-23)
+- **Use Cases:** Sensitive documents, offline RAG, cost-free experimentation
 
 ---
 
 ### [aisoft](https://github.com/ly2xxx/aisoft)
-**AI-Powered Software Development**
+**AI-powered software development**
 
-Intelligent software development platform leveraging AI to accelerate the entire software development lifecycle.
+Alternative approach to AI-assisted development with focus on rapid prototyping and code generation.
 
-- **Tech Stack:** Python, AI Models, DevOps Integration
-- **Features:** Requirements analysis, architecture design, implementation, deployment
-- **Status:** Beta
-- **Scope:** End-to-end AI-assisted development
-
-*Also see: [Development Tools](dev-tools.md#aisoft) for tooling integration*
+- **Tech Stack:** Python, AI APIs
+- **Status:** 🟡 Maintenance (Updated: 2025-07-05)
 
 ---
 
-*All AI projects follow ethical AI principles and include appropriate safeguards and documentation.*
+## 🔗 LangChain & LangGraph Ecosystem
+
+### [langflow](https://github.com/ly2xxx/langflow)
+**LangFlow visual workflow builder**
+
+Visual programming interface for LangChain workflows. Build complex AI pipelines with drag-and-drop components.
+
+- **Tech Stack:** HTML, LangFlow
+- **Status:** 🟡 Stable (Updated: 2025-05-28)
+
+---
+
+### [langflow-110](https://github.com/ly2xxx/langflow-110)
+**LangFlow 1.1.0 source adapted for debugging**
+
+Customized LangFlow source code for deep debugging and experimentation. Useful for understanding LangFlow internals.
+
+- **Tech Stack:** Python, LangFlow
+- **Status:** 🟡 Reference (Updated: 2025-10-01)
+- **Purpose:** Learning, debugging, custom modifications
+
+---
+
+### [langflow-whl](https://github.com/ly2xxx/langflow-whl)
+**LangFlow wheel packages**
+
+Pre-built LangFlow packages for easier installation and distribution.
+
+- **Tech Stack:** Python, Wheels
+- **Status:** 🟡 Archived (Updated: 2024-12-12)
+
+---
+
+### [langgraph_ollama](https://github.com/ly2xxx/langgraph_ollama)
+**LangGraph with Ollama integration**
+
+Combines LangGraph agent framework with local Ollama LLMs for privacy-first multi-agent systems.
+
+- **Tech Stack:** Python, LangGraph, Ollama
+- **Status:** 🟡 Stable (Updated: 2024-11-16)
+
+---
+
+### [langraph](https://github.com/ly2xxx/langraph) ⭐ 1
+**LangGraph experiments**
+
+Early experiments with LangGraph for building stateful agent applications. Jupyter notebook-based explorations.
+
+- **Tech Stack:** Jupyter Notebook, LangGraph
+- **Status:** 🟡 Archived (Updated: 2024-06-21)
+
+---
+
+## 🔧 Code Generation & Development
+
+### [agent_code_generator](https://github.com/ly2xxx/agent_code_generator)
+**Generate code from file and query**
+
+AI agent that generates code based on existing files and natural language queries. Useful for boilerplate generation and code scaffolding.
+
+- **Tech Stack:** Python, AI code models
+- **Features:** Context-aware generation, file analysis, query-based coding
+- **Status:** 🟡 Stable (Updated: 2024-11-16)
+
+---
+
+## ☁️ Cloud AI Platforms
+
+### [bedrock_poc](https://github.com/ly2xxx/bedrock_poc)
+**AWS Bedrock proof-of-concept**
+
+Exploration of AWS Bedrock managed AI services. Demonstrates serverless LLM integration with AWS infrastructure.
+
+- **Tech Stack:** Python, AWS Bedrock, AWS Lambda
+- **Features:** Managed LLM APIs, AWS integration, serverless architecture
+- **Status:** 🟡 Stable (Updated: 2024-06-04)
+
+---
+
+## 🧪 Research & Experimentation
+
+### [dspy_poc](https://github.com/ly2xxx/dspy_poc)
+**DSPy framework experiments**
+
+Exploring DSPy (Stanford's declarative LLM programming framework) for systematic prompt optimization.
+
+- **Tech Stack:** Jupyter Notebook, DSPy
+- **Status:** 🟡 Stable (Updated: 2025-02-19)
+
+---
+
+## 🤖 AI Assistants & Tools
+
+### [claude-notes](https://github.com/ly2xxx/claude-notes)
+**Study notes for Claude and coding assistants**
+
+Comprehensive learning notes about Claude, Clawdbot, and AI coding assistants. Best practices, patterns, and workflows.
+
+- **Tech Stack:** Python, Markdown
+- **Status:** 🟢 Active (Updated: 2026-02-04)
+- **Topics:** Claude API, MCP, AI pair programming, prompt engineering
+
+---
+
+### [mcp](https://github.com/ly2xxx/mcp)
+**Model Context Protocol POC**
+
+Experiments with Anthropic's Model Context Protocol for integrating external tools and data sources with Claude.
+
+- **Tech Stack:** HTML, MCP
+- **Status:** 🟢 Active (Updated: 2026-01-26)
+- **Features:** Tool integration, context injection, custom servers
+
+---
+
+### [notebooklm](https://github.com/ly2xxx/notebooklm)
+**NotebookLM and Google AI tools**
+
+Experiments with Google's NotebookLM, Antigravity, and other emerging Google AI tools.
+
+- **Tech Stack:** Various
+- **Status:** 🟢 Active (Updated: 2026-01-27)
+
+---
+
+## 📊 Category Insights
+
+### By Status
+- 🟢 **Active (6):** aidev, ai-pdf-chat, aisoft, claude-notes, mcp, notebooklm
+- 🟡 **Stable/Maintenance (12):** agents, rag_chat_opensource_llm, SmartDevelop, local-rag-ollama, langflow, langflow-110, langflow-whl, langgraph_ollama, langraph, agent_code_generator, bedrock_poc, dspy_poc
+
+### By Focus Area
+- **RAG Systems (4):** rag_chat_opensource_llm, ai-pdf-chat, local-rag-ollama, aisoft
+- **Agent Frameworks (5):** agents, langgraph_ollama, langraph, agent_code_generator, aidev
+- **LangChain/Flow (5):** langflow, langflow-110, langflow-whl, langgraph, langgraph_ollama
+- **Cloud AI (1):** bedrock_poc
+- **Research (2):** dspy_poc, notebooklm
+- **Tools (3):** claude-notes, mcp, SmartDevelop
+
+### Tech Stack Distribution
+- **Python:** 13 projects
+- **Jupyter Notebooks:** 2 projects
+- **HTML/Web:** 2 projects
+- **PowerShell:** 1 project
+
+---
+
+## 🎯 Learning Path
+
+If you're new to these projects, recommended learning order:
+
+1. **Start:** `claude-notes` - Learn fundamentals of AI assistants
+2. **RAG Basics:** `local-rag-ollama` - Understand RAG architecture locally
+3. **Production RAG:** `rag_chat_opensource_llm` - See production patterns
+4. **Agents:** `agents` - Learn multi-agent systems with LangGraph
+5. **Advanced:** `aidev` - Full AI development team orchestration
+
+---
+
+## 🔗 Related Resources
+
+- [LangChain Documentation](https://python.langchain.com/)
+- [LangGraph Documentation](https://langchain-ai.github.io/langgraph/)
+- [Ollama Models](https://ollama.com/)
+- [AWS Bedrock](https://aws.amazon.com/bedrock/)
+- [Model Context Protocol](https://modelcontextprotocol.io/)
+
+---
+
+*Updated: 2026-02-07*
